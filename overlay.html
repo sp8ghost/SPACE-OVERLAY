@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Overlay</title>
+
+<style>
+  body {
+    margin: 0;
+    overflow: hidden;
+    background: transparent;
+  }
+
+  #container {
+    position: relative;
+    width: 1920px;
+    height: 1080px;
+  }
+
+  /* 🔥 Logo (bottom-right) */
+  #logo {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    bottom: 0px;
+    right: 10px;
+  }
+
+  /* 💬 Chat (top-left) */
+  #chat {
+    position: absolute;
+    top: -400px;
+    left: 1px;
+    width: 500px;
+    height: 600px;
+    border: none;
+  }
+</style>
+</head>
+
+<body>
+
+<div id="container">
+
+  <video id="logo" autoplay loop muted playsinline>
+    <source src="logo.webm" type="video/webm">
+  </video>
+
+  <iframe id="chat" src="https://streamlabs.com/widgets/chat-box/v1/CC36539D60ADEF6ED26D"></iframe>
+
+</div>
+
+</body>
+</html>
